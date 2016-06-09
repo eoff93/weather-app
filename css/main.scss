@@ -1,5 +1,33 @@
 $color1: #42c0fb; //rgba(66, 192, 251, 100)
+$color1-lighten: lighten($color1, 10%);
 $color2: #fde74c; //rgba(253, 231, 76, 100)
 $color3: #9bc53d; //rgba(155, 197, 61, 100)
 $color4: #e55934; //rgba(229, 89, 52, 100)
 $color5: #fa7921; //rgba(250, 121, 33, 100)
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+body {
+  font-family: Georgia, serif;
+  color: #fff;
+}
+
+h1 {
+  font-size: 6em;
+}
+
+h3 {
+  font-size: 3em;
+}
+
+.app {
+  @include border-radius(20px);
+  background: $color1;
+  width: 60%;
+
+}

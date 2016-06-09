@@ -1,3 +1,19 @@
+body {
+  font-family: Georgia, serif;
+  color: #fff; }
 
+h1 {
+  font-size: 6em; }
+
+h3 {
+  font-size: 3em; }
+
+.app {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  background: #42c0fb;
+  width: 60%; }
 
 /*# sourceMappingURL=main.css.map */
