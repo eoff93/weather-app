@@ -27,6 +27,7 @@ h3 {
 
 .app {
   @include border-radius(20px);
+  margin: 0, auto;
   background: $color1;
   width: 60%;
 

@@ -13,6 +13,7 @@ h3 {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   border-radius: 20px;
+  margin: 0, auto;
   background: #42c0fb;
   width: 60%; }
 
