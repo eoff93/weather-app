@@ -14,21 +14,26 @@ $color5: #fa7921; //rgba(250, 121, 33, 100)
 
 body {
   font-family: Georgia, serif;
+  background-color: $color1-lighten;
   color: #fff;
 }
 
-h1 {
+header {
+  color: #fff;
+}
+
+main h1 {
   font-size: 6em;
 }
 
-h3 {
+main h3 {
   font-size: 3em;
 }
 
 .app {
   @include border-radius(20px);
   margin: 0, auto;
+  margin-top: 30px;
   background: $color1;
   width: 60%;
-
 }
