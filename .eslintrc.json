@@ -2,8 +2,5 @@
     "extends": "airbnb",
     "plugins": [
         "react"
-    ],
-    "env": {
-      "jquery": true
-    }
+    ]
 }
