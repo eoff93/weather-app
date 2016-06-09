@@ -6,9 +6,33 @@ var apiId = 'e28ac852596e204e2ab1e5198ae5bbf3';
 var api = void 0;
 var iconUrl = undefined;
 
+getLatLon();
+// initialize lat and lon
+function getLatLon() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function (position) {
+      lat = position.coords.latitude;
+      lon = position.coords.longitude;
+      setApi();
+      processJSON();
+    });
+  }
+}
+
 // sets the api variable to the whole api key
 function setApi() {
   api = 'http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&units=imperial&APPID=' + apiId;
+}
+
+// get json data
+function processJSON() {
+  $.getJSON(api, function (json) {
+    this.json = json;
+    setLocation(json);
+    setDescription(json);
+    setWindSpeed(json);
+    setTemp(json);
+  });
 }
 
 // takes in a json object and outputs temperature
