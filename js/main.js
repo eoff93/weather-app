@@ -10,7 +10,7 @@ getLatLon();
 // initialize lat and lon
 function getLatLon() {
   if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function (position) {
+    navigator.geolocation.getCurrentPosition(function setVariable(position) {
       lat = position.coords.latitude;
       lon = position.coords.longitude;
       setApi();
@@ -36,7 +36,7 @@ function processJSON() {
 }
 
 // takes in a json object and outputs temperature
-function setTemp() {
+function setTemp(json) {
   var temp = JSON.stringify(json.weather[0].icon);
   icon = icon.substr(1, icon.length - 2);
   iconUrl = '<img src=http://openweathermap.org/img/w/' + icon + '.png>';
