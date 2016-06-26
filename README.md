@@ -14,7 +14,7 @@ Made for freecodecamp Front End Certification.
 
 `git clone https://github.com/eoff93/weather-app.git`
 
-Open `index.html` in a browser.
+Or check it out on [Codepen] (http://codepen.io/eoff/pen/rLxwpd).
 
 #### Update
 Geolocation has been deprecated, I'll spin up a server in the future so you can check it out in your local environment.
